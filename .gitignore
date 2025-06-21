@@ -1,0 +1,11 @@
+# Java
+target/
+*.class
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
