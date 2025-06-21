@@ -50,7 +50,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- QR Code Generator -->
+        <!-- QR Code Generator (ZXing) -->
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>
@@ -62,13 +62,14 @@
             <version>3.5.2</version>
         </dependency>
 
-        <!-- Lombok (optional) -->
+        <!-- Optional: Lombok (for less boilerplate) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
+        <!-- Optional: Dotenv loader (if using .env manually in code) -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
@@ -82,12 +83,13 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- H2 Database (for testing) -->
+        <!-- H2 for in-memory DB testing (optional) -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -98,4 +100,3 @@
         </plugins>
     </build>
 </project>
-
